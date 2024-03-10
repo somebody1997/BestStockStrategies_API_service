@@ -6,7 +6,7 @@ const buying_algorithm = require('./routes/buying.js');
 const selling_algorithm = require('./routes/selling.js');
 
 app.get('/', (req, res) =>{
-    res.send('words!');
+    res.send('Best_Strategies main place !');
 });
 
 app.get('/test', (req, res) => {

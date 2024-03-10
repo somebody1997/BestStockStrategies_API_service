@@ -13,7 +13,7 @@ GET /api/Best_Strategies/:strategy/:symbol/:action/:startDate/:endDate
 ```
 ### Parameters:
 
-- `:strategy` - The trading strategy to use (e.g., `Lowrisk`, `Equity`, `GlobalMacro`, `JumpTrading`).
+- `:strategy` - The trading strategy to use (e.g., `Lowrisk`, `Equity`, `GlobalMacro`, `JumpTrading`). Any type error of strategy, will be response as Lowrisk strategy 
 - `:symbol` - The stock symbol to query (e.g., `AAPL`).
 - `:action` - The action, either `BUY` or `SELL`.
 - `:startDate` - The start date of the period to analyze (YYYY-MM-DD).
@@ -31,6 +31,16 @@ https://best-stock-strategies-api-service.vercel.app/api/Best_Strategies/Lowrisk
 ```
 https://best-stock-strategies-api-service.vercel.app/api/Best_Strategies/GlobalMacro/AAPL/SELL/2022-10-11/2022-12-12
 ```
+test use case 
+Request:
+```
+https://best-stock-strategies-api-service.vercel.app/test
+```
+Response:
+```
+Test route is working
+```
+
 
 ### Example call to request when to buy AAPL stock using a conservative strategy:
 
