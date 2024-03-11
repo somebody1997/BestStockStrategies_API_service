@@ -1,9 +1,12 @@
 const express = require('express');
 const app = express();
 const axios = require('axios');
+const cors = require('cors')
 const port = process.env.port || 3000;
 const buying_algorithm = require('./routes/buying.js');
 const selling_algorithm = require('./routes/selling.js');
+
+app.use((cors()));
 
 app.get('/', (req, res) =>{
     res.send('Best_Strategies main place !');
